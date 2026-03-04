@@ -9,12 +9,12 @@ public class Main {
 
         try {
             CepService cepservice = new CepService();
-            String dadoscep = cepservice.getDadosCep(CEP);
+            String dadosEndereco = cepservice.getDadosEndereco(CEP);
             
-            if (dadoscep.contains("\"code\":400")){
+            if (dadosEndereco.contains("\"code\":400")){
                 System.err.println("Dados não encontrados. Insira novamente e verifique se possui 8 dígitos.");
             } else {
-                CepPrinter.imprimirdadosCep(dadoscep);
+                CepPrinter.imprimirdadosEndereco(dadosEndereco);
             }
         } catch (Exception e){
             System.err.println(e.getMessage());
