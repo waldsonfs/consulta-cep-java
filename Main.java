@@ -14,10 +14,11 @@ public class Main {
             if (dadosEndereco.contains("\"code\":400")){
                 System.err.println("Dados não encontrados. Insira novamente e verifique se possui 8 dígitos.");
             } else {
-                CepPrinter.imprimirdadosEndereco(dadosEndereco);
+                CepPrinter.imprimirDadosEndereco(dadosEndereco);
             }
         } catch (Exception e){
             System.err.println(e.getMessage());
         }
+        scanner.close();
     }
 }

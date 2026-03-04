@@ -4,7 +4,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class CepService {
-    public String getDadosCep(String cep) throws Exception{
+    public String getDadosEndereco(String cep) throws Exception{
 
         String cepFormatado = cep.replaceAll("[^0-9]", "");
 
